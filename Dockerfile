@@ -1,3 +1,3 @@
 FROM minio/mc
 
-CMD [ "mc", "mirror", "-w", "/data", "backup/$BUCKET" ]
+CMD [ "mc", "mirror", "-w", "/data", "BACKUP/$BUCKET" ]
