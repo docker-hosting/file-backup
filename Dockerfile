@@ -1,3 +1,3 @@
 FROM minio/mc
 
-ENTRYPOINT mc mb "BACKUP/$BUCKET" & mc mirror -w /data "BACKUP/$BUCKET"
+ENTRYPOINT mc mb "BACKUP/$BUCKET" & mc mirror --overwrite -w /data "BACKUP/$BUCKET"
